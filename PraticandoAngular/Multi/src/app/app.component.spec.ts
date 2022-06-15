@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { CalculadoraModule } from './calculadora/'
+import { GerenciadorDeTarefasModule } from './gerenciador-de-tarefas/gerenciador-de-tarefas.module';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -9,7 +10,8 @@ describe('AppComponent', () => {
         AppComponent
       ],
       imports: [
-        CalculadoraModule
+        CalculadoraModule,
+        GerenciadorDeTarefasModule
       ]
     }).compileComponents();
   });

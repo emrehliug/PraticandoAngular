@@ -1,25 +1,31 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from './app-routing.module';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 import { AppComponent } from './app.component';
-import { NavComponent } from './shared/nav/nav.component';
+import { NavModule } from './shared/nav/nav.module';
 import { CalculadoraModule } from './calculadora';
-import { IonicModule } from '@ionic/angular';
+import { GerenciadorDeTarefasModule } from './gerenciador-de-tarefas/gerenciador-de-tarefas.module';
+import { TarefasModule } from './gerenciador-de-tarefas/tarefas/tarefas.module';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavComponent,
+    AppComponent
      ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     TooltipModule,
     CalculadoraModule,
-    IonicModule.forRoot(),
+    NavModule,
+    GerenciadorDeTarefasModule,
+    TarefasModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

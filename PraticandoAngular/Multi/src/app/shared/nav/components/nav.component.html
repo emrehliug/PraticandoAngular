@@ -2,15 +2,15 @@
   <div class="navigation">
     <ul>
       <li class="list active">
-          <a href="#">
+          <a href="calculadora">
             <span class="icon">
               <ion-icon name="calculator-outline"></ion-icon>
             </span>
             <span class="text">Calculadora</span>
           </a>
       </li>
-      <li class="list">
-        <a href="#">
+      <li class="list" routerLinkActive="active">
+        <a href="/gerenciadordetarefas">
           <span class="icon">
             <ion-icon name="construct-outline"></ion-icon>
           </span>
@@ -44,14 +44,5 @@
       <div class="indicator"></div>
     </ul>
   </div>
-  <!-- Colocar esse codigo todo em typescript no nav.component.ts
-  <script>
-    const list = document.querySelectorAll("list");
-      function activeLink(){
-      list.forEach((item) => item.classList.remove("active"));
-      this.classList.add("active");
-      }
-    list.forEach((item) => item.addEventListener("click",activeLink));
-  </script>-->
 </div>
 
