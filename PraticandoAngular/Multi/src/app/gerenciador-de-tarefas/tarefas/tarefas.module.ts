@@ -8,6 +8,7 @@ import { TarefaService } from './shared';
   ],
   providers: [
     TarefaService
+    //importando via provider o servico de tarefas
   ]
 })
 export class TarefasModule { }
