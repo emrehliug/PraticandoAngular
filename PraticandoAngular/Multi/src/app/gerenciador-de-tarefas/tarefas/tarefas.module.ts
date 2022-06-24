@@ -10,9 +10,11 @@ import { ListarTarefaComponent } from './listar/listar-tarefa.component';
   declarations:[
     ListarTarefaComponent
   ],
+  exports: [
+    ListarTarefaComponent
+  ],
   providers: [
     TarefaService
-    //importando via provider o servico de tarefas
   ]
 })
 export class TarefasModule { }

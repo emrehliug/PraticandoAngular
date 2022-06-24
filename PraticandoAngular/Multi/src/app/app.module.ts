@@ -7,9 +7,6 @@ import { AppComponent } from './app.component';
 import { NavModule } from './shared/nav/nav.module';
 import { CalculadoraModule } from './calculadora';
 import { GerenciadorDeTarefasModule } from './gerenciador-de-tarefas/gerenciador-de-tarefas.module';
-import { TarefasModule } from './gerenciador-de-tarefas/tarefas/tarefas.module';
-
-
 
 @NgModule({
   declarations: [
@@ -22,7 +19,6 @@ import { TarefasModule } from './gerenciador-de-tarefas/tarefas/tarefas.module';
     CalculadoraModule,
     NavModule,
     GerenciadorDeTarefasModule,
-    TarefasModule
   ],
   providers: [],
   bootstrap: [AppComponent],
