@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Calculadora": {
+    "Multi": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/calculadora",
+            "outputPath": "dist/multi",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -33,40 +33,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              {
-                "input": "node_modules/@ionic/angular/css/core.css"
-              },
-              {
-                "input": "node_modules/@ionic/angular/css/normalize.css"
-              },
-              {
-                "input": "node_modules/@ionic/angular/css/structure.css"
-              },
-              {
-                "input": "node_modules/@ionic/angular/css/typography.css"
-              },
-              {
-                "input": "node_modules/@ionic/angular/css/display.css"
-              },
-              {
-                "input": "node_modules/@ionic/angular/css/padding.css"
-              },
-              {
-                "input": "node_modules/@ionic/angular/css/float-elements.css"
-              },
-              {
-                "input": "node_modules/@ionic/angular/css/text-alignment.css"
-              },
-              {
-                "input": "node_modules/@ionic/angular/css/text-transformation.css"
-              },
-              {
-                "input": "node_modules/@ionic/angular/css/flex-utils.css"
-              }
-            ],
-            "scripts": [
-
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ]
           },
           "configurations": {
@@ -106,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Calculadora:build:production"
+              "browserTarget": "Multi:build:production"
             },
             "development": {
-              "browserTarget": "Calculadora:build:development"
+              "browserTarget": "Multi:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -117,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Calculadora:build"
+            "browserTarget": "Multi:build"
           }
         },
         "test": {
@@ -145,29 +112,29 @@
         "ionic-cordova-serve": {
           "builder": "@ionic/angular-toolkit:cordova-serve",
           "options": {
-            "cordovaBuildTarget": "Calculadora:ionic-cordova-build",
-            "devServerTarget": "Calculadora:serve"
+            "cordovaBuildTarget": "Multi:ionic-cordova-build",
+            "devServerTarget": "Multi:serve"
           },
           "configurations": {
             "production": {
-              "cordovaBuildTarget": "Calculadora:ionic-cordova-build:production",
-              "devServerTarget": "Calculadora:serve:production"
+              "cordovaBuildTarget": "Multi:ionic-cordova-build:production",
+              "devServerTarget": "Multi:serve:production"
             }
           }
         },
         "ionic-cordova-build": {
           "builder": "@ionic/angular-toolkit:cordova-build",
           "options": {
-            "browserTarget": "Calculadora:build"
+            "browserTarget": "Multi:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Calculadora:build:production"
+              "browserTarget": "Multi:build:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "Calculadora"
+  "defaultProject": "Multi"
 }
