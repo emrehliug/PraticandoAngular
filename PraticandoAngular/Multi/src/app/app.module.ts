@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
@@ -18,10 +18,9 @@ import { GerenciadorDeTarefasModule } from './gerenciador-de-tarefas/gerenciador
     TooltipModule,
     CalculadoraModule,
     NavModule,
-    GerenciadorDeTarefasModule,
+    GerenciadorDeTarefasModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
