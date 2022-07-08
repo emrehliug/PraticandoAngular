@@ -132,6 +132,9 @@
               "browserTarget": "Multi:build:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
