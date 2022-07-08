@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
-import { TarefaService } from './shared';
+import { TarefaService, TarefaConcluidaDirective } from './shared';
 import { ListarTarefaComponent } from './listar/listar-tarefa.component';
 import { CadastrarTarefaComponent } from './cadastrar/cadastrar-tarefa.component';
 import { EditarTarefasComponent } from './editar/editar-tarefas.component';
@@ -17,12 +17,14 @@ import { EditarTarefasComponent } from './editar/editar-tarefas.component';
   declarations:[
     ListarTarefaComponent,
     CadastrarTarefaComponent,
-    EditarTarefasComponent
+    EditarTarefasComponent,
+    TarefaConcluidaDirective
   ],
   exports: [
     ListarTarefaComponent,
     CadastrarTarefaComponent,
-    EditarTarefasComponent
+    EditarTarefasComponent,
+    TarefaConcluidaDirective
   ],
   providers: [
     TarefaService
