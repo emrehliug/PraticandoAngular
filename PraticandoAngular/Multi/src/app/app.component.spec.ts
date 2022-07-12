@@ -1,7 +1,8 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { CalculadoraModule } from './calculadora/'
+import { CalculadoraModule } from './calculadora/';
 import { GerenciadorDeTarefasModule } from './gerenciador-de-tarefas/gerenciador-de-tarefas.module';
+import { JogoDaVelhaModule } from './jogo-da-velha'
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -11,7 +12,8 @@ describe('AppComponent', () => {
       ],
       imports: [
         CalculadoraModule,
-        GerenciadorDeTarefasModule
+        GerenciadorDeTarefasModule,
+        JogoDaVelhaModule
       ]
     }).compileComponents();
   });
@@ -22,9 +24,9 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Calculadora'`, () => {
+  it(`should have as title 'Multi'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Calculadora');
+    expect(app.title).toEqual('Multi');
   });
 });
