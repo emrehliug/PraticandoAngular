@@ -48,12 +48,14 @@ border-bottom: 8px solid #333;
 border-right: 8px solid #333;
 }
 
-.kz-img-x {
-background-image: url('/assets/image/x.jpg');
+.kz-img-x{
+ font-size: 100px;
+ padding-left: 8px;
 }
 
 .kz-img-o {
-background-image: url('/assets/image/o.jpg');
+  font-size: 100px;
+  padding-left: 8px;
 }
 
 .kz-cor-vitoria {
